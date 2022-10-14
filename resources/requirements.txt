@@ -1,0 +1,4 @@
+numpy
+scipy==1.8.1
+
+# May also need boto3, if your runtime does not natively provide this.

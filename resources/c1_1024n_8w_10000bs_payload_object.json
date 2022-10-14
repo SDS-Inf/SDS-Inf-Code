@@ -1,0 +1,46 @@
+{
+    "data_params": 
+        {
+            "weights_loc":
+                {
+                    "bucket": "mnist-radixnet-weights",
+                    "subfolder": "expts/1024/c1_1024n_8w_10000bs"
+                },
+            "inf_data_loc":
+                {
+                    "bucket": "mnist-radixnet-inference",
+                    "subfolder": "expts/1024/c1_1024n_8w_10000bs"
+                },
+            "connectivity_loc":
+                {
+                    "bucket" : "mnist-radixnet-connectivity",
+                    "subfolder": "expts/1024/c1_1024n_8w_10000bs"
+                },
+            "hidden_loc":
+                {
+                    "bucket": "mnist-radixnet-hidden",
+                    "subfolder": "c1_1024n_8w_10000bs_object/1"
+                },
+            "metrics_loc":
+                {
+                    "bucket": "mnist-radixnet-metrics",
+                    "subfolder": "sds-inf-object-expts/1024/c1_1024n_8w_10000bs_object",
+                    "filename": "1_c1_1024n_8w_10000bs_object.csv",
+                    "expt_id": 1
+                }
+        },
+    "invoc_params":
+        {
+            "bfr": 8,
+            "nlevels": 1,
+            "total_nworkers": 8
+        },
+    "model_params":
+        {
+            "numNeurons": 1024, 
+            "numLayers": 120,
+            "numData": 10000,
+            "batchSize": 10000,
+            "numBatches": 1
+        }      
+}
